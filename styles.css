@@ -1,0 +1,256 @@
+/* Reset CSS de bază pentru a uniformiza stilul pe diferite browsere */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth; /* Activarea derulării lină pentru browserele care o suportă */
+}
+
+header {
+    background: url('banner-background.jpg') no-repeat center center/cover; /* Fundal pentru banner */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Algerian', cursive; /* Fontul pentru titlu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.main-nav li {
+    margin: 0 10px;
+}
+
+nav ul.secondary-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul.secondary-nav li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Constantia', serif; /* Fontul pentru linkurile de navigare */
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.section-image {
+    width: 25%; /* Ajustează dimensiunea imaginii la 25% din lățimea paginii */
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.section-home {
+    background-color: #ffebcc; /* Fundal portocaliu deschis */
+    padding: 20px;
+}
+
+.section-services {
+    background-color: #d0e6f0; /* Fundal albastru deschis */
+    padding: 20px;
+}
+
+#contact {
+    padding: 20px;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+    text-align: center; /* Centrăm butoanele */
+}
+
+.call-text {
+    font-weight: bold;
+    color: red;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.8em; /* Mărimea textului actualizată */
+    margin-bottom: 10px;
+}
+
+#callButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #4CAF50; /* Fundal verde pentru butonul de apelare */
+    background-image: url('phone-icon.png'); /* Pictograma de telefon */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; /* Timpul tranziției */
+}
+
+#callButton:hover {
+    transform: scale(1.1);
+}
+
+#callButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #3b5998; /* Fundal albastru pentru Facebook */
+    background-image: url('facebook-icon.png'); /* Logo Facebook */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; /* Timpul tranziției */
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #e1306c; /* Fundal roz pentru Instagram */
+    background-image: url('instagram-icon.png'); /* Logo Instagram */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s; /* Timpul tranziției */
+}
+
+.phone-container {
+    position: fixed;
+    bottom: 10px; /* Poziționăm butonul în partea de jos a paginii */
+    left: 10px; /* Distanța față de marginea stângă a ecranului */
+    z-index: 1000;
+}
+
+.phone-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#phoneButton {
+    background-color: transparent; /* Fundal transparent pentru buton */
+    border: 2px solid #4CAF50; /* Bordură verde pentru buton */
+    color: #4CAF50; /* Culoare text verde */
+    border-radius: 5px;
+    padding: 8px; /* Dimensiune buton micșorată */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial Black', sans-serif; /* Fontul pentru textul butonului */
+    font-weight: bold;
+    font-size: 1em; /* Dimensiune text buton micșorată */
+    transition: transform 0.3s; /* Adaugăm tranziția */
+}
+
+#phoneButton:hover {
+    transform: scale(1.05); /* Mărim butonul doar puțin */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bold-italic-text {
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Ink Free', cursive;
+}
+
+.service-button {
+    display: block;
+    margin: 5px 0; /* Reducem marginile */
+    padding: 5px; /* Reducem padding-ul */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'UT Sans', sans-serif; /* Fontul pentru butoane */
+    font-size: 0.9em; /* Dimensiune text micșorată */
+}
+
+.service-button:hover {
+    background-color: #ddd;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #f4f4f4;
+}
+
+/* Stiluri pentru butoanele din secțiunea de navigare */
+nav ul.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.secondary-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Stiluri pentru butonul de apelare pe ecrane mici (mobil) */
+@media (max-width: 767px) {
+    .phone-container {
+        left: 5px; /* Mutăm butonul mai aproape de marginea ecranului pe mobil */
+    }
+
+    #phoneButton {
+        padding: 10px; /* Dimensiune buton micșorată pe mobil */
+        font-size: 1.2em; /* Dimensiune text buton micșorată pe mobil */
+    }
+}
